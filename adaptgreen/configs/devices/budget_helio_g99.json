@@ -1,0 +1,26 @@
+{
+  "device_class": "Redmi Note 12 / Budget Helio G99",
+  "hardware": {
+    "soc": "MediaTek Helio G99 (6nm) / Snapdragon 685",
+    "cpu": "2x Cortex-A76 @ 2.2 GHz + 6x Cortex-A55 @ 2.0 GHz",
+    "total_ram_mb": 4096.0,
+    "cooling": "Passive graphite dissipation on plastic chassis",
+    "display": "6.67-inch AMOLED 120Hz"
+  },
+  "constraints": {
+    "latency_max_ms": 120.0,
+    "min_similarity_threshold": 0.90,
+    "thermal_max": 77.5,
+    "battery_min": 15.0,
+    "network_rssi_min": -85.0,
+    "ram_min": 800.0
+  },
+  "tier_profiles": {
+    "T1": { "name": "Full FP32", "energy_mj": 58.0, "latency_ms": 55.0, "relative_accuracy": 1.0, "memory_mb": 120.0 },
+    "T2": { "name": "Structured Pruning", "energy_mj": 40.0, "latency_ms": 38.0, "relative_accuracy": 0.985, "memory_mb": 85.0 },
+    "T3": { "name": "Dynamic INT8", "energy_mj": 22.0, "latency_ms": 26.0, "relative_accuracy": 0.995, "memory_mb": 50.0 },
+    "T4": { "name": "Cloud Offload REST", "energy_mj": 9.5, "latency_ms": 48.0, "relative_accuracy": 0.999, "memory_mb": 15.0 },
+    "T5": { "name": "In-Memory Cache", "energy_mj": 1.2, "latency_ms": 0.08, "relative_accuracy": 1.0, "memory_mb": 5.0 }
+  }
+}
+

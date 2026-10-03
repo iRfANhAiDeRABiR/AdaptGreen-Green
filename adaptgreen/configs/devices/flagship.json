@@ -1,0 +1,24 @@
+{
+  "device_class": "Flagship",
+  "hardware": {
+    "soc": "Snapdragon 8-series SoC",
+    "total_ram_mb": 12288.0,
+    "display": "6.7-inch AMOLED 120Hz"
+  },
+  "constraints": {
+    "latency_max_ms": 100.0,
+    "min_similarity_threshold": 0.95,
+    "thermal_max": 82.0,
+    "battery_min": 20.0,
+    "network_rssi_min": -85.0,
+    "ram_min": 400.0
+  },
+  "tier_profiles": {
+    "T1": { "name": "Full FP32", "energy_mj": 45.0, "latency_ms": 40.0, "relative_accuracy": 1.0, "memory_mb": 120.0 },
+    "T2": { "name": "Structured Pruning", "energy_mj": 30.0, "latency_ms": 28.0, "relative_accuracy": 0.985, "memory_mb": 85.0 },
+    "T3": { "name": "Dynamic INT8", "energy_mj": 15.0, "latency_ms": 18.0, "relative_accuracy": 0.995, "memory_mb": 50.0 },
+    "T4": { "name": "Cloud Offload REST", "energy_mj": 8.0, "latency_ms": 35.0, "relative_accuracy": 0.999, "memory_mb": 15.0 },
+    "T5": { "name": "In-Memory Cache", "energy_mj": 1.0, "latency_ms": 0.05, "relative_accuracy": 1.0, "memory_mb": 5.0 }
+  }
+}
+

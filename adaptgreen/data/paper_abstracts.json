@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 1,
+    "title": "Context-Adaptive Runtime Systems for Mobile Neural Networks",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "In this work, we propose a novel framework for context-adaptive runtime systems for mobile neural networks designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 2,
+    "title": "Dynamic Voltage and Frequency Scaling for Neural Processing Units",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of dynamic voltage and frequency scaling for neural processing units, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 3,
+    "title": "Latency-Critical Mobile Vision Processing on Heterogeneous SoCs",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "This paper investigates latency-critical mobile vision processing on heterogeneous socs within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 4,
+    "title": "Memory Footprint Optimization in Embedded Natural Language Models",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "We introduce memory footprint optimization in embedded natural language models, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 5,
+    "title": "Thermal-Aware Workload Scheduling on Mobile Heterogeneous Multicores",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "In this work, we propose a novel framework for thermal-aware workload scheduling on mobile heterogeneous multicores designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 6,
+    "title": "Energy-Harvesting IoT Sensor Inference using Sparse Networks",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of energy-harvesting iot sensor inference using sparse networks, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 7,
+    "title": "Adaptive Bitwidth Selection for On-Device Speech Recognition",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "This paper investigates adaptive bitwidth selection for on-device speech recognition within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 8,
+    "title": "Real-Time Semantic Segmentation on Resource-Constrained Smartphones",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "We introduce real-time semantic segmentation on resource-constrained smartphones, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 9,
+    "title": "Battery-Aware Dynamic Offloading for Edge Intelligence",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "In this work, we propose a novel framework for battery-aware dynamic offloading for edge intelligence designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 10,
+    "title": "Collaborative Split Inference between Mobile Clients and Edge Servers",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of collaborative split inference between mobile clients and edge servers, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 11,
+    "title": "Post-Training Quantization of Large Language Models via Outlier Smoothing",
+    "category": "Model Compression & Quantization",
+    "abstract": "This paper investigates post-training quantization of large language models via outlier smoothing within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 12,
+    "title": "Structured Channel Pruning with First-Order Taylor Expansion",
+    "category": "Model Compression & Quantization",
+    "abstract": "We introduce structured channel pruning with first-order taylor expansion, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 13,
+    "title": "Mixed-Precision Quantization Strategies Guided by Hessian Spectra",
+    "category": "Model Compression & Quantization",
+    "abstract": "In this work, we propose a novel framework for mixed-precision quantization strategies guided by hessian spectra designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 14,
+    "title": "Zero-Shot Weight Clustering for Ultra-Low Precision Transformers",
+    "category": "Model Compression & Quantization",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of zero-shot weight clustering for ultra-low precision transformers, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 15,
+    "title": "Knowledge Distillation from Ensemble Models to Tiny Mobile Networks",
+    "category": "Model Compression & Quantization",
+    "abstract": "This paper investigates knowledge distillation from ensemble models to tiny mobile networks within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 16,
+    "title": "Hardware-Friendly Integer Arithmetic for Attention Layers",
+    "category": "Model Compression & Quantization",
+    "abstract": "We introduce hardware-friendly integer arithmetic for attention layers, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 17,
+    "title": "Sparse Matrix Multiplication Accelerators for Edge Devices",
+    "category": "Model Compression & Quantization",
+    "abstract": "In this work, we propose a novel framework for sparse matrix multiplication accelerators for edge devices designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 18,
+    "title": "Layer-Wise Progressive Pruning for Vision Transformers",
+    "category": "Model Compression & Quantization",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of layer-wise progressive pruning for vision transformers, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 19,
+    "title": "Dynamic Token Dropping in Compressed Sentence Encoders",
+    "category": "Model Compression & Quantization",
+    "abstract": "This paper investigates dynamic token dropping in compressed sentence encoders within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 20,
+    "title": "Weight Slicing and Dynamic Activation Pruning for Fast Inference",
+    "category": "Model Compression & Quantization",
+    "abstract": "We introduce weight slicing and dynamic activation pruning for fast inference, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 21,
+    "title": "Carbon-Aware Scheduling of Machine Learning Inference in Data Centers",
+    "category": "Green Computing & Sustainability",
+    "abstract": "In this work, we propose a novel framework for carbon-aware scheduling of machine learning inference in data centers designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 22,
+    "title": "Energy-Efficient Transformer Architectures with Linear Complexity",
+    "category": "Green Computing & Sustainability",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of energy-efficient transformer architectures with linear complexity, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 23,
+    "title": "Benchmarking the Carbon Footprint of Edge AI Deployments",
+    "category": "Green Computing & Sustainability",
+    "abstract": "This paper investigates benchmarking the carbon footprint of edge ai deployments within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 24,
+    "title": "Lifecycle Carbon Assessment of Wearable Health Monitoring Devices",
+    "category": "Green Computing & Sustainability",
+    "abstract": "We introduce lifecycle carbon assessment of wearable health monitoring devices, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 25,
+    "title": "Renewable-Powered Edge Gateways for Distributed Sensing",
+    "category": "Green Computing & Sustainability",
+    "abstract": "In this work, we propose a novel framework for renewable-powered edge gateways for distributed sensing designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 26,
+    "title": "Thermal Throttling Mitigation through Dynamic Computation Scaling",
+    "category": "Green Computing & Sustainability",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of thermal throttling mitigation through dynamic computation scaling, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 27,
+    "title": "Power-Efficient Deep Learning Accelerators for Edge Microcontrollers",
+    "category": "Green Computing & Sustainability",
+    "abstract": "This paper investigates power-efficient deep learning accelerators for edge microcontrollers within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 28,
+    "title": "Energy Harvesting Optimization in Autonomous Micro-Aerial Vehicles",
+    "category": "Green Computing & Sustainability",
+    "abstract": "We introduce energy harvesting optimization in autonomous micro-aerial vehicles, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 29,
+    "title": "Low-Power Semantic Search Engines for Mobile Offline Retrieval",
+    "category": "Green Computing & Sustainability",
+    "abstract": "In this work, we propose a novel framework for low-power semantic search engines for mobile offline retrieval designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 30,
+    "title": "Green Edge Analytics: Trade-Offs in Latency, Accuracy, and Joules",
+    "category": "Green Computing & Sustainability",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of green edge analytics: trade-offs in latency, accuracy, and joules, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 31,
+    "title": "Miniaturized Sentence Transformers for On-Device Semantic Indexing",
+    "category": "Transformers & Semantic Search",
+    "abstract": "This paper investigates miniaturized sentence transformers for on-device semantic indexing within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 32,
+    "title": "Approximate Nearest Neighbor Search with Learned Indexing",
+    "category": "Transformers & Semantic Search",
+    "abstract": "We introduce approximate nearest neighbor search with learned indexing, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 33,
+    "title": "Cache-Augmented Retrieval for Mobile Personal Assistants",
+    "category": "Transformers & Semantic Search",
+    "abstract": "In this work, we propose a novel framework for cache-augmented retrieval for mobile personal assistants designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 34,
+    "title": "Cross-Encoder Reranking with Latency Budget Constraints",
+    "category": "Transformers & Semantic Search",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of cross-encoder reranking with latency budget constraints, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 35,
+    "title": "Dense Passage Retrieval on Low-Power Embedded Devices",
+    "category": "Transformers & Semantic Search",
+    "abstract": "This paper investigates dense passage retrieval on low-power embedded devices within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 36,
+    "title": "Locality-Sensitive Hashing for Real-Time Query Vector Search",
+    "category": "Transformers & Semantic Search",
+    "abstract": "We introduce locality-sensitive hashing for real-time query vector search, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 37,
+    "title": "Quantized Product Vector Quantization for Fast Semantic Matching",
+    "category": "Transformers & Semantic Search",
+    "abstract": "In this work, we propose a novel framework for quantized product vector quantization for fast semantic matching designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 38,
+    "title": "Hierarchical Document Clustering for Mobile Note-Taking Apps",
+    "category": "Transformers & Semantic Search",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of hierarchical document clustering for mobile note-taking apps, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 39,
+    "title": "Dual-Encoder Architectures Optimized for Mobile Bi-Encoders",
+    "category": "Transformers & Semantic Search",
+    "abstract": "This paper investigates dual-encoder architectures optimized for mobile bi-encoders within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 40,
+    "title": "Incremental Embedding Updates in Streaming Mobile Datasets",
+    "category": "Transformers & Semantic Search",
+    "abstract": "We introduce incremental embedding updates in streaming mobile datasets, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 41,
+    "title": "Communication-Efficient Federated Averaging via Differential Updates",
+    "category": "Federated & Distributed Learning",
+    "abstract": "In this work, we propose a novel framework for communication-efficient federated averaging via differential updates designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 42,
+    "title": "Heterogeneity-Aware Federated Learning on Edge Devices",
+    "category": "Federated & Distributed Learning",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of heterogeneity-aware federated learning on edge devices, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 43,
+    "title": "Privacy-Preserving Edge Computing with Differential Privacy Guarantees",
+    "category": "Federated & Distributed Learning",
+    "abstract": "This paper investigates privacy-preserving edge computing with differential privacy guarantees within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 44,
+    "title": "Decentralized Peer-to-Peer Consensus for Swarm Intelligence",
+    "category": "Federated & Distributed Learning",
+    "abstract": "We introduce decentralized peer-to-peer consensus for swarm intelligence, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 45,
+    "title": "Client Selection Strategies under Battery and Bandwidth Constraints",
+    "category": "Federated & Distributed Learning",
+    "abstract": "In this work, we propose a novel framework for client selection strategies under battery and bandwidth constraints designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 46,
+    "title": "Asynchronous Federated Optimization for Highly Unstable Edge Networks",
+    "category": "Federated & Distributed Learning",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of asynchronous federated optimization for highly unstable edge networks, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 47,
+    "title": "Personalized Federated Models via Local Model Adaptation",
+    "category": "Federated & Distributed Learning",
+    "abstract": "This paper investigates personalized federated models via local model adaptation within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 48,
+    "title": "Secure Aggregation Protocols with Minimal Computational Overhead",
+    "category": "Federated & Distributed Learning",
+    "abstract": "We introduce secure aggregation protocols with minimal computational overhead, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 49,
+    "title": "Split Federated Learning for Resource-Constrained Internet of Things",
+    "category": "Federated & Distributed Learning",
+    "abstract": "In this work, we propose a novel framework for split federated learning for resource-constrained internet of things designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 50,
+    "title": "Robustness against Byzantine Adversaries in Mobile Edge Networks",
+    "category": "Federated & Distributed Learning",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of robustness against byzantine adversaries in mobile edge networks, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 51,
+    "title": "Context-Adaptive Runtime Systems for Mobile Neural Networks (Part 2)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "We introduce context-adaptive runtime systems for mobile neural networks, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 52,
+    "title": "Dynamic Voltage and Frequency Scaling for Neural Processing Units (Part 2)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "In this work, we propose a novel framework for dynamic voltage and frequency scaling for neural processing units designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 53,
+    "title": "Latency-Critical Mobile Vision Processing on Heterogeneous SoCs (Part 2)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of latency-critical mobile vision processing on heterogeneous socs, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 54,
+    "title": "Memory Footprint Optimization in Embedded Natural Language Models (Part 2)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "This paper investigates memory footprint optimization in embedded natural language models within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 55,
+    "title": "Thermal-Aware Workload Scheduling on Mobile Heterogeneous Multicores (Part 2)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "We introduce thermal-aware workload scheduling on mobile heterogeneous multicores, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 56,
+    "title": "Energy-Harvesting IoT Sensor Inference using Sparse Networks (Part 2)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "In this work, we propose a novel framework for energy-harvesting iot sensor inference using sparse networks designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 57,
+    "title": "Adaptive Bitwidth Selection for On-Device Speech Recognition (Part 2)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of adaptive bitwidth selection for on-device speech recognition, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 58,
+    "title": "Real-Time Semantic Segmentation on Resource-Constrained Smartphones (Part 2)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "This paper investigates real-time semantic segmentation on resource-constrained smartphones within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 59,
+    "title": "Battery-Aware Dynamic Offloading for Edge Intelligence (Part 2)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "We introduce battery-aware dynamic offloading for edge intelligence, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 60,
+    "title": "Collaborative Split Inference between Mobile Clients and Edge Servers (Part 2)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "In this work, we propose a novel framework for collaborative split inference between mobile clients and edge servers designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 61,
+    "title": "Post-Training Quantization of Large Language Models via Outlier Smoothing (Part 2)",
+    "category": "Model Compression & Quantization",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of post-training quantization of large language models via outlier smoothing, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 62,
+    "title": "Structured Channel Pruning with First-Order Taylor Expansion (Part 2)",
+    "category": "Model Compression & Quantization",
+    "abstract": "This paper investigates structured channel pruning with first-order taylor expansion within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 63,
+    "title": "Mixed-Precision Quantization Strategies Guided by Hessian Spectra (Part 2)",
+    "category": "Model Compression & Quantization",
+    "abstract": "We introduce mixed-precision quantization strategies guided by hessian spectra, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 64,
+    "title": "Zero-Shot Weight Clustering for Ultra-Low Precision Transformers (Part 2)",
+    "category": "Model Compression & Quantization",
+    "abstract": "In this work, we propose a novel framework for zero-shot weight clustering for ultra-low precision transformers designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 65,
+    "title": "Knowledge Distillation from Ensemble Models to Tiny Mobile Networks (Part 2)",
+    "category": "Model Compression & Quantization",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of knowledge distillation from ensemble models to tiny mobile networks, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 66,
+    "title": "Hardware-Friendly Integer Arithmetic for Attention Layers (Part 2)",
+    "category": "Model Compression & Quantization",
+    "abstract": "This paper investigates hardware-friendly integer arithmetic for attention layers within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 67,
+    "title": "Sparse Matrix Multiplication Accelerators for Edge Devices (Part 2)",
+    "category": "Model Compression & Quantization",
+    "abstract": "We introduce sparse matrix multiplication accelerators for edge devices, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 68,
+    "title": "Layer-Wise Progressive Pruning for Vision Transformers (Part 2)",
+    "category": "Model Compression & Quantization",
+    "abstract": "In this work, we propose a novel framework for layer-wise progressive pruning for vision transformers designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 69,
+    "title": "Dynamic Token Dropping in Compressed Sentence Encoders (Part 2)",
+    "category": "Model Compression & Quantization",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of dynamic token dropping in compressed sentence encoders, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 70,
+    "title": "Weight Slicing and Dynamic Activation Pruning for Fast Inference (Part 2)",
+    "category": "Model Compression & Quantization",
+    "abstract": "This paper investigates weight slicing and dynamic activation pruning for fast inference within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 71,
+    "title": "Carbon-Aware Scheduling of Machine Learning Inference in Data Centers (Part 2)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "We introduce carbon-aware scheduling of machine learning inference in data centers, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 72,
+    "title": "Energy-Efficient Transformer Architectures with Linear Complexity (Part 2)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "In this work, we propose a novel framework for energy-efficient transformer architectures with linear complexity designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 73,
+    "title": "Benchmarking the Carbon Footprint of Edge AI Deployments (Part 2)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of benchmarking the carbon footprint of edge ai deployments, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 74,
+    "title": "Lifecycle Carbon Assessment of Wearable Health Monitoring Devices (Part 2)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "This paper investigates lifecycle carbon assessment of wearable health monitoring devices within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 75,
+    "title": "Renewable-Powered Edge Gateways for Distributed Sensing (Part 2)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "We introduce renewable-powered edge gateways for distributed sensing, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 76,
+    "title": "Thermal Throttling Mitigation through Dynamic Computation Scaling (Part 2)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "In this work, we propose a novel framework for thermal throttling mitigation through dynamic computation scaling designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 77,
+    "title": "Power-Efficient Deep Learning Accelerators for Edge Microcontrollers (Part 2)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of power-efficient deep learning accelerators for edge microcontrollers, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 78,
+    "title": "Energy Harvesting Optimization in Autonomous Micro-Aerial Vehicles (Part 2)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "This paper investigates energy harvesting optimization in autonomous micro-aerial vehicles within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 79,
+    "title": "Low-Power Semantic Search Engines for Mobile Offline Retrieval (Part 2)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "We introduce low-power semantic search engines for mobile offline retrieval, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 80,
+    "title": "Green Edge Analytics: Trade-Offs in Latency, Accuracy, and Joules (Part 2)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "In this work, we propose a novel framework for green edge analytics: trade-offs in latency, accuracy, and joules designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 81,
+    "title": "Miniaturized Sentence Transformers for On-Device Semantic Indexing (Part 2)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of miniaturized sentence transformers for on-device semantic indexing, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 82,
+    "title": "Approximate Nearest Neighbor Search with Learned Indexing (Part 2)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "This paper investigates approximate nearest neighbor search with learned indexing within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 83,
+    "title": "Cache-Augmented Retrieval for Mobile Personal Assistants (Part 2)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "We introduce cache-augmented retrieval for mobile personal assistants, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 84,
+    "title": "Cross-Encoder Reranking with Latency Budget Constraints (Part 2)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "In this work, we propose a novel framework for cross-encoder reranking with latency budget constraints designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 85,
+    "title": "Dense Passage Retrieval on Low-Power Embedded Devices (Part 2)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of dense passage retrieval on low-power embedded devices, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 86,
+    "title": "Locality-Sensitive Hashing for Real-Time Query Vector Search (Part 2)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "This paper investigates locality-sensitive hashing for real-time query vector search within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 87,
+    "title": "Quantized Product Vector Quantization for Fast Semantic Matching (Part 2)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "We introduce quantized product vector quantization for fast semantic matching, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 88,
+    "title": "Hierarchical Document Clustering for Mobile Note-Taking Apps (Part 2)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "In this work, we propose a novel framework for hierarchical document clustering for mobile note-taking apps designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 89,
+    "title": "Dual-Encoder Architectures Optimized for Mobile Bi-Encoders (Part 2)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of dual-encoder architectures optimized for mobile bi-encoders, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 90,
+    "title": "Incremental Embedding Updates in Streaming Mobile Datasets (Part 2)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "This paper investigates incremental embedding updates in streaming mobile datasets within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 91,
+    "title": "Communication-Efficient Federated Averaging via Differential Updates (Part 2)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "We introduce communication-efficient federated averaging via differential updates, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 92,
+    "title": "Heterogeneity-Aware Federated Learning on Edge Devices (Part 2)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "In this work, we propose a novel framework for heterogeneity-aware federated learning on edge devices designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 93,
+    "title": "Privacy-Preserving Edge Computing with Differential Privacy Guarantees (Part 2)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of privacy-preserving edge computing with differential privacy guarantees, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 94,
+    "title": "Decentralized Peer-to-Peer Consensus for Swarm Intelligence (Part 2)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "This paper investigates decentralized peer-to-peer consensus for swarm intelligence within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 95,
+    "title": "Client Selection Strategies under Battery and Bandwidth Constraints (Part 2)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "We introduce client selection strategies under battery and bandwidth constraints, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 96,
+    "title": "Asynchronous Federated Optimization for Highly Unstable Edge Networks (Part 2)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "In this work, we propose a novel framework for asynchronous federated optimization for highly unstable edge networks designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 97,
+    "title": "Personalized Federated Models via Local Model Adaptation (Part 2)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of personalized federated models via local model adaptation, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 98,
+    "title": "Secure Aggregation Protocols with Minimal Computational Overhead (Part 2)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "This paper investigates secure aggregation protocols with minimal computational overhead within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 99,
+    "title": "Split Federated Learning for Resource-Constrained Internet of Things (Part 2)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "We introduce split federated learning for resource-constrained internet of things, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 100,
+    "title": "Robustness against Byzantine Adversaries in Mobile Edge Networks (Part 2)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "In this work, we propose a novel framework for robustness against byzantine adversaries in mobile edge networks designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 101,
+    "title": "Context-Adaptive Runtime Systems for Mobile Neural Networks (Part 3)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "This paper investigates context-adaptive runtime systems for mobile neural networks within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 102,
+    "title": "Dynamic Voltage and Frequency Scaling for Neural Processing Units (Part 3)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "We introduce dynamic voltage and frequency scaling for neural processing units, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 103,
+    "title": "Latency-Critical Mobile Vision Processing on Heterogeneous SoCs (Part 3)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "In this work, we propose a novel framework for latency-critical mobile vision processing on heterogeneous socs designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 104,
+    "title": "Memory Footprint Optimization in Embedded Natural Language Models (Part 3)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of memory footprint optimization in embedded natural language models, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 105,
+    "title": "Thermal-Aware Workload Scheduling on Mobile Heterogeneous Multicores (Part 3)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "This paper investigates thermal-aware workload scheduling on mobile heterogeneous multicores within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 106,
+    "title": "Energy-Harvesting IoT Sensor Inference using Sparse Networks (Part 3)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "We introduce energy-harvesting iot sensor inference using sparse networks, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 107,
+    "title": "Adaptive Bitwidth Selection for On-Device Speech Recognition (Part 3)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "In this work, we propose a novel framework for adaptive bitwidth selection for on-device speech recognition designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 108,
+    "title": "Real-Time Semantic Segmentation on Resource-Constrained Smartphones (Part 3)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of real-time semantic segmentation on resource-constrained smartphones, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 109,
+    "title": "Battery-Aware Dynamic Offloading for Edge Intelligence (Part 3)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "This paper investigates battery-aware dynamic offloading for edge intelligence within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 110,
+    "title": "Collaborative Split Inference between Mobile Clients and Edge Servers (Part 3)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "We introduce collaborative split inference between mobile clients and edge servers, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 111,
+    "title": "Post-Training Quantization of Large Language Models via Outlier Smoothing (Part 3)",
+    "category": "Model Compression & Quantization",
+    "abstract": "In this work, we propose a novel framework for post-training quantization of large language models via outlier smoothing designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 112,
+    "title": "Structured Channel Pruning with First-Order Taylor Expansion (Part 3)",
+    "category": "Model Compression & Quantization",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of structured channel pruning with first-order taylor expansion, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 113,
+    "title": "Mixed-Precision Quantization Strategies Guided by Hessian Spectra (Part 3)",
+    "category": "Model Compression & Quantization",
+    "abstract": "This paper investigates mixed-precision quantization strategies guided by hessian spectra within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 114,
+    "title": "Zero-Shot Weight Clustering for Ultra-Low Precision Transformers (Part 3)",
+    "category": "Model Compression & Quantization",
+    "abstract": "We introduce zero-shot weight clustering for ultra-low precision transformers, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 115,
+    "title": "Knowledge Distillation from Ensemble Models to Tiny Mobile Networks (Part 3)",
+    "category": "Model Compression & Quantization",
+    "abstract": "In this work, we propose a novel framework for knowledge distillation from ensemble models to tiny mobile networks designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 116,
+    "title": "Hardware-Friendly Integer Arithmetic for Attention Layers (Part 3)",
+    "category": "Model Compression & Quantization",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of hardware-friendly integer arithmetic for attention layers, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 117,
+    "title": "Sparse Matrix Multiplication Accelerators for Edge Devices (Part 3)",
+    "category": "Model Compression & Quantization",
+    "abstract": "This paper investigates sparse matrix multiplication accelerators for edge devices within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 118,
+    "title": "Layer-Wise Progressive Pruning for Vision Transformers (Part 3)",
+    "category": "Model Compression & Quantization",
+    "abstract": "We introduce layer-wise progressive pruning for vision transformers, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 119,
+    "title": "Dynamic Token Dropping in Compressed Sentence Encoders (Part 3)",
+    "category": "Model Compression & Quantization",
+    "abstract": "In this work, we propose a novel framework for dynamic token dropping in compressed sentence encoders designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 120,
+    "title": "Weight Slicing and Dynamic Activation Pruning for Fast Inference (Part 3)",
+    "category": "Model Compression & Quantization",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of weight slicing and dynamic activation pruning for fast inference, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 121,
+    "title": "Carbon-Aware Scheduling of Machine Learning Inference in Data Centers (Part 3)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "This paper investigates carbon-aware scheduling of machine learning inference in data centers within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 122,
+    "title": "Energy-Efficient Transformer Architectures with Linear Complexity (Part 3)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "We introduce energy-efficient transformer architectures with linear complexity, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 123,
+    "title": "Benchmarking the Carbon Footprint of Edge AI Deployments (Part 3)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "In this work, we propose a novel framework for benchmarking the carbon footprint of edge ai deployments designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 124,
+    "title": "Lifecycle Carbon Assessment of Wearable Health Monitoring Devices (Part 3)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of lifecycle carbon assessment of wearable health monitoring devices, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 125,
+    "title": "Renewable-Powered Edge Gateways for Distributed Sensing (Part 3)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "This paper investigates renewable-powered edge gateways for distributed sensing within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 126,
+    "title": "Thermal Throttling Mitigation through Dynamic Computation Scaling (Part 3)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "We introduce thermal throttling mitigation through dynamic computation scaling, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 127,
+    "title": "Power-Efficient Deep Learning Accelerators for Edge Microcontrollers (Part 3)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "In this work, we propose a novel framework for power-efficient deep learning accelerators for edge microcontrollers designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 128,
+    "title": "Energy Harvesting Optimization in Autonomous Micro-Aerial Vehicles (Part 3)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of energy harvesting optimization in autonomous micro-aerial vehicles, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 129,
+    "title": "Low-Power Semantic Search Engines for Mobile Offline Retrieval (Part 3)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "This paper investigates low-power semantic search engines for mobile offline retrieval within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 130,
+    "title": "Green Edge Analytics: Trade-Offs in Latency, Accuracy, and Joules (Part 3)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "We introduce green edge analytics: trade-offs in latency, accuracy, and joules, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 131,
+    "title": "Miniaturized Sentence Transformers for On-Device Semantic Indexing (Part 3)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "In this work, we propose a novel framework for miniaturized sentence transformers for on-device semantic indexing designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 132,
+    "title": "Approximate Nearest Neighbor Search with Learned Indexing (Part 3)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of approximate nearest neighbor search with learned indexing, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 133,
+    "title": "Cache-Augmented Retrieval for Mobile Personal Assistants (Part 3)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "This paper investigates cache-augmented retrieval for mobile personal assistants within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 134,
+    "title": "Cross-Encoder Reranking with Latency Budget Constraints (Part 3)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "We introduce cross-encoder reranking with latency budget constraints, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 135,
+    "title": "Dense Passage Retrieval on Low-Power Embedded Devices (Part 3)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "In this work, we propose a novel framework for dense passage retrieval on low-power embedded devices designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 136,
+    "title": "Locality-Sensitive Hashing for Real-Time Query Vector Search (Part 3)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of locality-sensitive hashing for real-time query vector search, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 137,
+    "title": "Quantized Product Vector Quantization for Fast Semantic Matching (Part 3)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "This paper investigates quantized product vector quantization for fast semantic matching within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 138,
+    "title": "Hierarchical Document Clustering for Mobile Note-Taking Apps (Part 3)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "We introduce hierarchical document clustering for mobile note-taking apps, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 139,
+    "title": "Dual-Encoder Architectures Optimized for Mobile Bi-Encoders (Part 3)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "In this work, we propose a novel framework for dual-encoder architectures optimized for mobile bi-encoders designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 140,
+    "title": "Incremental Embedding Updates in Streaming Mobile Datasets (Part 3)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of incremental embedding updates in streaming mobile datasets, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 141,
+    "title": "Communication-Efficient Federated Averaging via Differential Updates (Part 3)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "This paper investigates communication-efficient federated averaging via differential updates within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 142,
+    "title": "Heterogeneity-Aware Federated Learning on Edge Devices (Part 3)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "We introduce heterogeneity-aware federated learning on edge devices, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 143,
+    "title": "Privacy-Preserving Edge Computing with Differential Privacy Guarantees (Part 3)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "In this work, we propose a novel framework for privacy-preserving edge computing with differential privacy guarantees designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 144,
+    "title": "Decentralized Peer-to-Peer Consensus for Swarm Intelligence (Part 3)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of decentralized peer-to-peer consensus for swarm intelligence, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 145,
+    "title": "Client Selection Strategies under Battery and Bandwidth Constraints (Part 3)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "This paper investigates client selection strategies under battery and bandwidth constraints within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 146,
+    "title": "Asynchronous Federated Optimization for Highly Unstable Edge Networks (Part 3)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "We introduce asynchronous federated optimization for highly unstable edge networks, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 147,
+    "title": "Personalized Federated Models via Local Model Adaptation (Part 3)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "In this work, we propose a novel framework for personalized federated models via local model adaptation designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 148,
+    "title": "Secure Aggregation Protocols with Minimal Computational Overhead (Part 3)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of secure aggregation protocols with minimal computational overhead, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 149,
+    "title": "Split Federated Learning for Resource-Constrained Internet of Things (Part 3)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "This paper investigates split federated learning for resource-constrained internet of things within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 150,
+    "title": "Robustness against Byzantine Adversaries in Mobile Edge Networks (Part 3)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "We introduce robustness against byzantine adversaries in mobile edge networks, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 151,
+    "title": "Context-Adaptive Runtime Systems for Mobile Neural Networks (Part 4)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of context-adaptive runtime systems for mobile neural networks, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 152,
+    "title": "Dynamic Voltage and Frequency Scaling for Neural Processing Units (Part 4)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "This paper investigates dynamic voltage and frequency scaling for neural processing units within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 153,
+    "title": "Latency-Critical Mobile Vision Processing on Heterogeneous SoCs (Part 4)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "We introduce latency-critical mobile vision processing on heterogeneous socs, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 154,
+    "title": "Memory Footprint Optimization in Embedded Natural Language Models (Part 4)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "In this work, we propose a novel framework for memory footprint optimization in embedded natural language models designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 155,
+    "title": "Thermal-Aware Workload Scheduling on Mobile Heterogeneous Multicores (Part 4)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of thermal-aware workload scheduling on mobile heterogeneous multicores, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 156,
+    "title": "Energy-Harvesting IoT Sensor Inference using Sparse Networks (Part 4)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "This paper investigates energy-harvesting iot sensor inference using sparse networks within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 157,
+    "title": "Adaptive Bitwidth Selection for On-Device Speech Recognition (Part 4)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "We introduce adaptive bitwidth selection for on-device speech recognition, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 158,
+    "title": "Real-Time Semantic Segmentation on Resource-Constrained Smartphones (Part 4)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "In this work, we propose a novel framework for real-time semantic segmentation on resource-constrained smartphones designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 159,
+    "title": "Battery-Aware Dynamic Offloading for Edge Intelligence (Part 4)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of battery-aware dynamic offloading for edge intelligence, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 160,
+    "title": "Collaborative Split Inference between Mobile Clients and Edge Servers (Part 4)",
+    "category": "Edge AI & Mobile Inference",
+    "abstract": "This paper investigates collaborative split inference between mobile clients and edge servers within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 161,
+    "title": "Post-Training Quantization of Large Language Models via Outlier Smoothing (Part 4)",
+    "category": "Model Compression & Quantization",
+    "abstract": "We introduce post-training quantization of large language models via outlier smoothing, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 162,
+    "title": "Structured Channel Pruning with First-Order Taylor Expansion (Part 4)",
+    "category": "Model Compression & Quantization",
+    "abstract": "In this work, we propose a novel framework for structured channel pruning with first-order taylor expansion designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 163,
+    "title": "Mixed-Precision Quantization Strategies Guided by Hessian Spectra (Part 4)",
+    "category": "Model Compression & Quantization",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of mixed-precision quantization strategies guided by hessian spectra, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 164,
+    "title": "Zero-Shot Weight Clustering for Ultra-Low Precision Transformers (Part 4)",
+    "category": "Model Compression & Quantization",
+    "abstract": "This paper investigates zero-shot weight clustering for ultra-low precision transformers within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 165,
+    "title": "Knowledge Distillation from Ensemble Models to Tiny Mobile Networks (Part 4)",
+    "category": "Model Compression & Quantization",
+    "abstract": "We introduce knowledge distillation from ensemble models to tiny mobile networks, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 166,
+    "title": "Hardware-Friendly Integer Arithmetic for Attention Layers (Part 4)",
+    "category": "Model Compression & Quantization",
+    "abstract": "In this work, we propose a novel framework for hardware-friendly integer arithmetic for attention layers designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 167,
+    "title": "Sparse Matrix Multiplication Accelerators for Edge Devices (Part 4)",
+    "category": "Model Compression & Quantization",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of sparse matrix multiplication accelerators for edge devices, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 168,
+    "title": "Layer-Wise Progressive Pruning for Vision Transformers (Part 4)",
+    "category": "Model Compression & Quantization",
+    "abstract": "This paper investigates layer-wise progressive pruning for vision transformers within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 169,
+    "title": "Dynamic Token Dropping in Compressed Sentence Encoders (Part 4)",
+    "category": "Model Compression & Quantization",
+    "abstract": "We introduce dynamic token dropping in compressed sentence encoders, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 170,
+    "title": "Weight Slicing and Dynamic Activation Pruning for Fast Inference (Part 4)",
+    "category": "Model Compression & Quantization",
+    "abstract": "In this work, we propose a novel framework for weight slicing and dynamic activation pruning for fast inference designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 171,
+    "title": "Carbon-Aware Scheduling of Machine Learning Inference in Data Centers (Part 4)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of carbon-aware scheduling of machine learning inference in data centers, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 172,
+    "title": "Energy-Efficient Transformer Architectures with Linear Complexity (Part 4)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "This paper investigates energy-efficient transformer architectures with linear complexity within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 173,
+    "title": "Benchmarking the Carbon Footprint of Edge AI Deployments (Part 4)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "We introduce benchmarking the carbon footprint of edge ai deployments, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 174,
+    "title": "Lifecycle Carbon Assessment of Wearable Health Monitoring Devices (Part 4)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "In this work, we propose a novel framework for lifecycle carbon assessment of wearable health monitoring devices designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 175,
+    "title": "Renewable-Powered Edge Gateways for Distributed Sensing (Part 4)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of renewable-powered edge gateways for distributed sensing, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 176,
+    "title": "Thermal Throttling Mitigation through Dynamic Computation Scaling (Part 4)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "This paper investigates thermal throttling mitigation through dynamic computation scaling within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 177,
+    "title": "Power-Efficient Deep Learning Accelerators for Edge Microcontrollers (Part 4)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "We introduce power-efficient deep learning accelerators for edge microcontrollers, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 178,
+    "title": "Energy Harvesting Optimization in Autonomous Micro-Aerial Vehicles (Part 4)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "In this work, we propose a novel framework for energy harvesting optimization in autonomous micro-aerial vehicles designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 179,
+    "title": "Low-Power Semantic Search Engines for Mobile Offline Retrieval (Part 4)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of low-power semantic search engines for mobile offline retrieval, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 180,
+    "title": "Green Edge Analytics: Trade-Offs in Latency, Accuracy, and Joules (Part 4)",
+    "category": "Green Computing & Sustainability",
+    "abstract": "This paper investigates green edge analytics: trade-offs in latency, accuracy, and joules within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 181,
+    "title": "Miniaturized Sentence Transformers for On-Device Semantic Indexing (Part 4)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "We introduce miniaturized sentence transformers for on-device semantic indexing, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 182,
+    "title": "Approximate Nearest Neighbor Search with Learned Indexing (Part 4)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "In this work, we propose a novel framework for approximate nearest neighbor search with learned indexing designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 183,
+    "title": "Cache-Augmented Retrieval for Mobile Personal Assistants (Part 4)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of cache-augmented retrieval for mobile personal assistants, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 184,
+    "title": "Cross-Encoder Reranking with Latency Budget Constraints (Part 4)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "This paper investigates cross-encoder reranking with latency budget constraints within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 185,
+    "title": "Dense Passage Retrieval on Low-Power Embedded Devices (Part 4)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "We introduce dense passage retrieval on low-power embedded devices, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 186,
+    "title": "Locality-Sensitive Hashing for Real-Time Query Vector Search (Part 4)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "In this work, we propose a novel framework for locality-sensitive hashing for real-time query vector search designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 187,
+    "title": "Quantized Product Vector Quantization for Fast Semantic Matching (Part 4)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of quantized product vector quantization for fast semantic matching, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 188,
+    "title": "Hierarchical Document Clustering for Mobile Note-Taking Apps (Part 4)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "This paper investigates hierarchical document clustering for mobile note-taking apps within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 189,
+    "title": "Dual-Encoder Architectures Optimized for Mobile Bi-Encoders (Part 4)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "We introduce dual-encoder architectures optimized for mobile bi-encoders, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 190,
+    "title": "Incremental Embedding Updates in Streaming Mobile Datasets (Part 4)",
+    "category": "Transformers & Semantic Search",
+    "abstract": "In this work, we propose a novel framework for incremental embedding updates in streaming mobile datasets designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 191,
+    "title": "Communication-Efficient Federated Averaging via Differential Updates (Part 4)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of communication-efficient federated averaging via differential updates, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 192,
+    "title": "Heterogeneity-Aware Federated Learning on Edge Devices (Part 4)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "This paper investigates heterogeneity-aware federated learning on edge devices within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 193,
+    "title": "Privacy-Preserving Edge Computing with Differential Privacy Guarantees (Part 4)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "We introduce privacy-preserving edge computing with differential privacy guarantees, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 194,
+    "title": "Decentralized Peer-to-Peer Consensus for Swarm Intelligence (Part 4)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "In this work, we propose a novel framework for decentralized peer-to-peer consensus for swarm intelligence designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 195,
+    "title": "Client Selection Strategies under Battery and Bandwidth Constraints (Part 4)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of client selection strategies under battery and bandwidth constraints, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 196,
+    "title": "Asynchronous Federated Optimization for Highly Unstable Edge Networks (Part 4)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "This paper investigates asynchronous federated optimization for highly unstable edge networks within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  },
+  {
+    "id": 197,
+    "title": "Personalized Federated Models via Local Model Adaptation (Part 4)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "We introduce personalized federated models via local model adaptation, addressing the critical trade-offs between computational overhead and model fidelity. Our empirical evaluation demonstrates significant energy reductions of up to 42% on mobile hardware while maintaining target accuracy constraints. We validate the runtime implementation on diverse commercial SoCs under fluctuating thermal and battery levels."
+  },
+  {
+    "id": 198,
+    "title": "Secure Aggregation Protocols with Minimal Computational Overhead (Part 4)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "In this work, we propose a novel framework for secure aggregation protocols with minimal computational overhead designed specifically for resource-constrained mobile and edge environments. By leveraging context-aware runtime policies and dynamic execution tiers, the proposed method achieves near-zero latency degradation. Comprehensive benchmarks illustrate superior performance across both synthetic workloads and standard edge benchmarks."
+  },
+  {
+    "id": 199,
+    "title": "Split Federated Learning for Resource-Constrained Internet of Things (Part 4)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "Mobile AI deployment is severely hindered by energy consumption, thermal saturation, and strict memory budgets. To tackle this challenge, this paper presents an in-depth study of split federated learning for resource-constrained internet of things, establishing systematic bounds on energy-accuracy pareto frontiers. Experimental results on modern smartphone chipsets confirm substantial gains in battery longevity and response stability."
+  },
+  {
+    "id": 200,
+    "title": "Robustness against Byzantine Adversaries in Mobile Edge Networks (Part 4)",
+    "category": "Federated & Distributed Learning",
+    "abstract": "This paper investigates robustness against byzantine adversaries in mobile edge networks within realistic mobile operating conditions. We devise an adaptive runtime decision mechanism that monitors hardware telemetry in real time and automatically reconfigures computation graphs. Extensive evaluations confirm that our approach outperforms static baselines by 35% in energy efficiency without compromising semantic retrieval quality."
+  }
+]

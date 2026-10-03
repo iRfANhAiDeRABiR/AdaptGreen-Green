@@ -1,0 +1,236 @@
+{
+  "FOREGROUND_ACTIVE": {
+    "scenario": "FOREGROUND_ACTIVE",
+    "total_epochs": 60,
+    "adaptgreen": {
+      "total_energy_mj": 2700.0,
+      "avg_energy_mj": 45.0,
+      "avg_latency_ms": 5.76,
+      "tier_usage": {
+        "T1": 60,
+        "T3": 0,
+        "T5": 0
+      },
+      "selected_tier_usage": {
+        "T1": 60
+      },
+      "tier_switches": 0,
+      "cache_hit_count": 0,
+      "cache_miss_count": 0,
+      "cache_hit_rate_pct": 0.0,
+      "fidelity_vs_t1": {
+        "mean_cosine_similarity": 1.0,
+        "min_cosine_similarity": 1.0,
+        "max_cosine_similarity": 1.0,
+        "pct_above_threshold": 100.0,
+        "threshold_used": 0.95,
+        "total_evaluated": 60,
+        "metric_definition_note": "Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy."
+      },
+      "recommendation_acc": {
+        "mean_top_k_overlap": 1.0,
+        "min_top_k_overlap": 1.0,
+        "max_top_k_overlap": 1.0,
+        "k": 5,
+        "total_evaluated": 60
+      },
+      "saving_vs_t1_pct": 0.0,
+      "saving_vs_t3_pct": -200.0
+    },
+    "static_t1": {
+      "total_energy_mj": 2700.0,
+      "avg_energy_mj": 45.0,
+      "avg_latency_ms": 5.44
+    },
+    "static_t3": {
+      "total_energy_mj": 900.0,
+      "avg_energy_mj": 15.0,
+      "avg_latency_ms": 6.84,
+      "fidelity_vs_t1": {
+        "mean_cosine_similarity": 0.9592,
+        "min_cosine_similarity": 0.9483,
+        "max_cosine_similarity": 0.9676,
+        "pct_above_threshold": 90.0,
+        "threshold_used": 0.95,
+        "total_evaluated": 60,
+        "metric_definition_note": "Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy."
+      }
+    }
+  },
+  "BACKGROUND_BATCH": {
+    "scenario": "BACKGROUND_BATCH",
+    "total_epochs": 60,
+    "adaptgreen": {
+      "total_energy_mj": 60.0,
+      "avg_energy_mj": 1.0,
+      "avg_latency_ms": 0.0,
+      "tier_usage": {
+        "T1": 0,
+        "T3": 0,
+        "T5": 60
+      },
+      "selected_tier_usage": {
+        "T5": 60
+      },
+      "tier_switches": 0,
+      "cache_hit_count": 60,
+      "cache_miss_count": 0,
+      "cache_hit_rate_pct": 100.0,
+      "fidelity_vs_t1": {
+        "mean_cosine_similarity": 0.9592,
+        "min_cosine_similarity": 0.9483,
+        "max_cosine_similarity": 0.9676,
+        "pct_above_threshold": 90.0,
+        "threshold_used": 0.95,
+        "total_evaluated": 60,
+        "metric_definition_note": "Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy."
+      },
+      "recommendation_acc": {
+        "mean_top_k_overlap": 0.8067,
+        "min_top_k_overlap": 0.6,
+        "max_top_k_overlap": 1.0,
+        "k": 5,
+        "total_evaluated": 60
+      },
+      "saving_vs_t1_pct": 97.78,
+      "saving_vs_t3_pct": 93.33
+    },
+    "static_t1": {
+      "total_energy_mj": 2700.0,
+      "avg_energy_mj": 45.0,
+      "avg_latency_ms": 5.87
+    },
+    "static_t3": {
+      "total_energy_mj": 900.0,
+      "avg_energy_mj": 15.0,
+      "avg_latency_ms": 7.22,
+      "fidelity_vs_t1": {
+        "mean_cosine_similarity": 0.9592,
+        "min_cosine_similarity": 0.9483,
+        "max_cosine_similarity": 0.9676,
+        "pct_above_threshold": 90.0,
+        "threshold_used": 0.95,
+        "total_evaluated": 60,
+        "metric_definition_note": "Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy."
+      }
+    }
+  },
+  "THERMAL_STRESS": {
+    "scenario": "THERMAL_STRESS",
+    "total_epochs": 60,
+    "adaptgreen": {
+      "total_energy_mj": 1290.0,
+      "avg_energy_mj": 21.5,
+      "avg_latency_ms": 7.6,
+      "tier_usage": {
+        "T1": 13,
+        "T3": 47,
+        "T5": 0
+      },
+      "selected_tier_usage": {
+        "T1": 13,
+        "T3": 47
+      },
+      "tier_switches": 1,
+      "cache_hit_count": 0,
+      "cache_miss_count": 0,
+      "cache_hit_rate_pct": 0.0,
+      "fidelity_vs_t1": {
+        "mean_cosine_similarity": 0.9678,
+        "min_cosine_similarity": 0.9483,
+        "max_cosine_similarity": 1.0,
+        "pct_above_threshold": 91.67,
+        "threshold_used": 0.95,
+        "total_evaluated": 60,
+        "metric_definition_note": "Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy."
+      },
+      "recommendation_acc": {
+        "mean_top_k_overlap": 0.8533,
+        "min_top_k_overlap": 0.6,
+        "max_top_k_overlap": 1.0,
+        "k": 5,
+        "total_evaluated": 60
+      },
+      "saving_vs_t1_pct": 52.22,
+      "saving_vs_t3_pct": -43.33
+    },
+    "static_t1": {
+      "total_energy_mj": 2700.0,
+      "avg_energy_mj": 45.0,
+      "avg_latency_ms": 6.93
+    },
+    "static_t3": {
+      "total_energy_mj": 900.0,
+      "avg_energy_mj": 15.0,
+      "avg_latency_ms": 6.43,
+      "fidelity_vs_t1": {
+        "mean_cosine_similarity": 0.9592,
+        "min_cosine_similarity": 0.9483,
+        "max_cosine_similarity": 0.9676,
+        "pct_above_threshold": 90.0,
+        "threshold_used": 0.95,
+        "total_evaluated": 60,
+        "metric_definition_note": "Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy."
+      }
+    }
+  },
+  "BATTERY_CRITICAL": {
+    "scenario": "BATTERY_CRITICAL",
+    "total_epochs": 60,
+    "adaptgreen": {
+      "total_energy_mj": 662.0,
+      "avg_energy_mj": 11.03,
+      "avg_latency_ms": 5.32,
+      "tier_usage": {
+        "T1": 0,
+        "T3": 43,
+        "T5": 17
+      },
+      "selected_tier_usage": {
+        "T3": 43,
+        "T5": 17
+      },
+      "tier_switches": 1,
+      "cache_hit_count": 17,
+      "cache_miss_count": 0,
+      "cache_hit_rate_pct": 28.33,
+      "fidelity_vs_t1": {
+        "mean_cosine_similarity": 0.9592,
+        "min_cosine_similarity": 0.9483,
+        "max_cosine_similarity": 0.9676,
+        "pct_above_threshold": 90.0,
+        "threshold_used": 0.95,
+        "total_evaluated": 60,
+        "metric_definition_note": "Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy."
+      },
+      "recommendation_acc": {
+        "mean_top_k_overlap": 0.8067,
+        "min_top_k_overlap": 0.6,
+        "max_top_k_overlap": 1.0,
+        "k": 5,
+        "total_evaluated": 60
+      },
+      "saving_vs_t1_pct": 75.48,
+      "saving_vs_t3_pct": 26.44
+    },
+    "static_t1": {
+      "total_energy_mj": 2700.0,
+      "avg_energy_mj": 45.0,
+      "avg_latency_ms": 6.12
+    },
+    "static_t3": {
+      "total_energy_mj": 900.0,
+      "avg_energy_mj": 15.0,
+      "avg_latency_ms": 6.86,
+      "fidelity_vs_t1": {
+        "mean_cosine_similarity": 0.9592,
+        "min_cosine_similarity": 0.9483,
+        "max_cosine_similarity": 0.9676,
+        "pct_above_threshold": 90.0,
+        "threshold_used": 0.95,
+        "total_evaluated": 60,
+        "metric_definition_note": "Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy."
+      }
+    }
+  }
+}

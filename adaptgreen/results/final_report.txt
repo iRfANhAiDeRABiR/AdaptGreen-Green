@@ -1,0 +1,103 @@
+================================================================================
+                  ADAPTGREEN SIMULATION PROTOTYPE FINAL REPORT                  
+================================================================================
+
+RESEARCH INTEGRITY DISCLAIMER:
+This experiment is a Python simulation prototype evaluating the AdaptGreen
+context-adaptive runtime architecture ahead of physical Android deployment.
+Simulated Elements: Battery, SoC Temperature, RAM, RSSI, Energy profiles (45/15/1 mJ).
+Actual Software Execution: PyTorch FP32 MiniLM, Dynamic INT8 Quantized PyTorch Model,
+In-Memory Embedding Cache, Policy Decision Unit, Offline Q-learning, Hysteresis Logic.
+
+--------------------------------------------------------------------------------
+GLOBAL EXPERIMENTAL RESULTS SUMMARY
+--------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+Scenario           | Method      | Tot (mJ)  | Avg (mJ)  | Avg Lat   | Sav vs T1  | Sav vs T3  | Tiers (1/2/3/4/5) | Top-5 Acc
+------------------------------------------------------------------------------------------------------------------------------
+FOREGROUND_ACTIVE  | Static T1   | 2700.0    | 45.0      | 5.4     ms | 0.0%       | N/A        | 60/0/0/0/0        | 100.0%   
+                   | Static T3   | 900.0     | 15.0      | 6.8     ms | 66.7%      | 0.0%       | 0/0/60/0/0        | 98.3%    
+                   | AdaptGreen  | 2700.0    | 45.0      | 5.8     ms | 0.0      % | -200.0   % | 60/0/0/0/0        | 100.0%   
+------------------------------------------------------------------------------------------------------------------------------
+BACKGROUND_BATCH   | Static T1   | 2700.0    | 45.0      | 5.9     ms | 0.0%       | N/A        | 60/0/0/0/0        | 100.0%   
+                   | Static T3   | 900.0     | 15.0      | 7.2     ms | 66.7%      | 0.0%       | 0/0/60/0/0        | 98.3%    
+                   | AdaptGreen  | 60.0      | 1.0       | 0.0     ms | 97.8     % | 93.3     % | 0/0/0/0/60        | 80.7%    
+------------------------------------------------------------------------------------------------------------------------------
+THERMAL_STRESS     | Static T1   | 2700.0    | 45.0      | 6.9     ms | 0.0%       | N/A        | 60/0/0/0/0        | 100.0%   
+                   | Static T3   | 900.0     | 15.0      | 6.4     ms | 66.7%      | 0.0%       | 0/0/60/0/0        | 98.3%    
+                   | AdaptGreen  | 1290.0    | 21.5      | 7.6     ms | 52.2     % | -43.3    % | 13/0/47/0/0       | 85.3%    
+------------------------------------------------------------------------------------------------------------------------------
+BATTERY_CRITICAL   | Static T1   | 2700.0    | 45.0      | 6.1     ms | 0.0%       | N/A        | 60/0/0/0/0        | 100.0%   
+                   | Static T3   | 900.0     | 15.0      | 6.9     ms | 66.7%      | 0.0%       | 0/0/60/0/0        | 98.3%    
+                   | AdaptGreen  | 662.0     | 11.0      | 5.3     ms | 75.5     % | 26.4     % | 0/0/43/0/17       | 80.7%    
+------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+DETAILED SCENARIO BREAKDOWN
+--------------------------------------------------------------------------------
+
+[ SCENARIO: FOREGROUND_ACTIVE ]
+  - Total Epochs Simulated:       60
+  - Average Execution Latency:    5.76 ms
+  - Average Simulated Energy:     45.00 mJ
+  - Total Simulated Energy:       2700.00 mJ
+  - Tier Distribution:            T1=60, T2=0, T3=0, T4=0, T5=0 epochs
+  - Cache Hits / Misses:          0 / 0
+  - Number of Tier Switches:      0
+  - Cache Hit Rate:               0.0%
+  - Energy Savings vs. Static T1: 0.00%
+  - Energy Savings vs. Static T3: -200.00%
+  - Semantic Cosine Similarity:   Mean=1.0000, Min=1.0000
+  - Embeddings >= 0.95 Similarity:  100.0%
+  - Top-5 Recommender Accuracy:   Mean=100.0%, Min=100.0%
+  - Metric Definition Note:       Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy.
+
+[ SCENARIO: BACKGROUND_BATCH ]
+  - Total Epochs Simulated:       60
+  - Average Execution Latency:    0.00 ms
+  - Average Simulated Energy:     1.00 mJ
+  - Total Simulated Energy:       60.00 mJ
+  - Tier Distribution:            T1=0, T2=0, T3=0, T4=0, T5=60 epochs
+  - Cache Hits / Misses:          60 / 0
+  - Number of Tier Switches:      0
+  - Cache Hit Rate:               100.0%
+  - Energy Savings vs. Static T1: 97.78%
+  - Energy Savings vs. Static T3: 93.33%
+  - Semantic Cosine Similarity:   Mean=0.9592, Min=0.9483
+  - Embeddings >= 0.95 Similarity:  90.0%
+  - Top-5 Recommender Accuracy:   Mean=80.7%, Min=60.0%
+  - Metric Definition Note:       Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy.
+
+[ SCENARIO: THERMAL_STRESS ]
+  - Total Epochs Simulated:       60
+  - Average Execution Latency:    7.60 ms
+  - Average Simulated Energy:     21.50 mJ
+  - Total Simulated Energy:       1290.00 mJ
+  - Tier Distribution:            T1=13, T2=0, T3=47, T4=0, T5=0 epochs
+  - Cache Hits / Misses:          0 / 0
+  - Number of Tier Switches:      1
+  - Cache Hit Rate:               0.0%
+  - Energy Savings vs. Static T1: 52.22%
+  - Energy Savings vs. Static T3: -43.33%
+  - Semantic Cosine Similarity:   Mean=0.9678, Min=0.9483
+  - Embeddings >= 0.95 Similarity:  91.7%
+  - Top-5 Recommender Accuracy:   Mean=85.3%, Min=60.0%
+  - Metric Definition Note:       Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy.
+
+[ SCENARIO: BATTERY_CRITICAL ]
+  - Total Epochs Simulated:       60
+  - Average Execution Latency:    5.32 ms
+  - Average Simulated Energy:     11.03 mJ
+  - Total Simulated Energy:       662.00 mJ
+  - Tier Distribution:            T1=0, T2=0, T3=43, T4=0, T5=17 epochs
+  - Cache Hits / Misses:          17 / 0
+  - Number of Tier Switches:      1
+  - Cache Hit Rate:               28.3%
+  - Energy Savings vs. Static T1: 75.48%
+  - Energy Savings vs. Static T3: 26.44%
+  - Semantic Cosine Similarity:   Mean=0.9592, Min=0.9483
+  - Embeddings >= 0.95 Similarity:  90.0%
+  - Top-5 Recommender Accuracy:   Mean=80.7%, Min=60.0%
+  - Metric Definition Note:       Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy.
+
+================================================================================
