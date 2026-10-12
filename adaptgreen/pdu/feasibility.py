@@ -144,8 +144,6 @@ class FeasibilityFilter:
 
         return feasible_tiers, violations
 
-        return feasible_tiers, violations
-
     def is_catastrophic_state(self, state: DeviceState) -> bool:
         """
         Determines whether the device state represents a critical emergency

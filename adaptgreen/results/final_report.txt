@@ -5,32 +5,52 @@
 RESEARCH INTEGRITY DISCLAIMER:
 This experiment is a Python simulation prototype evaluating the AdaptGreen
 context-adaptive runtime architecture ahead of physical Android deployment.
-Simulated Elements: Battery, SoC Temperature, RAM, RSSI, Energy profiles (45/15/1 mJ).
-Actual Software Execution: PyTorch FP32 MiniLM, Dynamic INT8 Quantized PyTorch Model,
-In-Memory Embedding Cache, Policy Decision Unit, Offline Q-learning, Hysteresis Logic.
+Simulated Elements: Battery, SoC Temperature, RAM, RSSI, Energy profiles (45/30/15/8/1 mJ).
+Actual Software Execution: PyTorch FP32 MiniLM (T1), L2 Structured Pruned MiniLM (T2),
+Dynamic INT8 Quantized PyTorch Model (T3), Cloud Offload REST Client (T4),
+In-Memory Embedding Cache (T5), Policy Decision Unit, Offline Q-learning, Hysteresis Logic.
 
 --------------------------------------------------------------------------------
 GLOBAL EXPERIMENTAL RESULTS SUMMARY
 --------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------
-Scenario           | Method      | Tot (mJ)  | Avg (mJ)  | Avg Lat   | Sav vs T1  | Sav vs T3  | Tiers (1/2/3/4/5) | Top-5 Acc
-------------------------------------------------------------------------------------------------------------------------------
-FOREGROUND_ACTIVE  | Static T1   | 2700.0    | 45.0      | 5.4     ms | 0.0%       | N/A        | 60/0/0/0/0        | 100.0%   
-                   | Static T3   | 900.0     | 15.0      | 6.8     ms | 66.7%      | 0.0%       | 0/0/60/0/0        | 98.3%    
-                   | AdaptGreen  | 2700.0    | 45.0      | 5.8     ms | 0.0      % | -200.0   % | 60/0/0/0/0        | 100.0%   
-------------------------------------------------------------------------------------------------------------------------------
-BACKGROUND_BATCH   | Static T1   | 2700.0    | 45.0      | 5.9     ms | 0.0%       | N/A        | 60/0/0/0/0        | 100.0%   
-                   | Static T3   | 900.0     | 15.0      | 7.2     ms | 66.7%      | 0.0%       | 0/0/60/0/0        | 98.3%    
-                   | AdaptGreen  | 60.0      | 1.0       | 0.0     ms | 97.8     % | 93.3     % | 0/0/0/0/60        | 80.7%    
-------------------------------------------------------------------------------------------------------------------------------
-THERMAL_STRESS     | Static T1   | 2700.0    | 45.0      | 6.9     ms | 0.0%       | N/A        | 60/0/0/0/0        | 100.0%   
-                   | Static T3   | 900.0     | 15.0      | 6.4     ms | 66.7%      | 0.0%       | 0/0/60/0/0        | 98.3%    
-                   | AdaptGreen  | 1290.0    | 21.5      | 7.6     ms | 52.2     % | -43.3    % | 13/0/47/0/0       | 85.3%    
-------------------------------------------------------------------------------------------------------------------------------
-BATTERY_CRITICAL   | Static T1   | 2700.0    | 45.0      | 6.1     ms | 0.0%       | N/A        | 60/0/0/0/0        | 100.0%   
-                   | Static T3   | 900.0     | 15.0      | 6.9     ms | 66.7%      | 0.0%       | 0/0/60/0/0        | 98.3%    
-                   | AdaptGreen  | 662.0     | 11.0      | 5.3     ms | 75.5     % | 26.4     % | 0/0/43/0/17       | 80.7%    
-------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+Scenario                 | Method      | Tot (mJ)  | Avg (mJ)  | Avg Lat   | Sav vs T1  | Sav vs T3  | Tiers (1/2/3/4/5) | Top-5 Acc
+------------------------------------------------------------------------------------------------------------------------------------
+FOREGROUND_ACTIVE        | Static T1   | 2700.0    | 45.0      | 5.8     ms | 0.0%       | N/A        | 60/0/0/0/0        | 100.0%   
+                         | Static T2   | 1800.0    | 30.0      | 6.3     ms | 33.3%      | -100.0%    | 0/60/0/0/0        | 85.0%    
+                         | Static T3   | 900.0     | 15.0      | 6.7     ms | 66.7%      | 0.0%       | 0/0/60/0/0        | 80.7%    
+                         | Static T4   | 480.0     | 8.0       | 34.4    ms | 82.2%      | 46.7%      | 0/0/0/60/0        | 100.0%   
+                         | Static T5   | 60.0      | 1.0       | 0.0     ms | 97.8%      | 93.3%      | 0/0/0/0/60        | 80.7%    
+                         | AdaptGreen  | 2700.0    | 45.0      | 6.2     ms | 0.0      % | -200.0   % | 60/0/0/0/0        | 100.0%   
+------------------------------------------------------------------------------------------------------------------------------------
+BACKGROUND_BATCH         | Static T1   | 2700.0    | 45.0      | 6.4     ms | 0.0%       | N/A        | 60/0/0/0/0        | 100.0%   
+                         | Static T2   | 1800.0    | 30.0      | 6.6     ms | 33.3%      | -100.0%    | 0/60/0/0/0        | 85.0%    
+                         | Static T3   | 900.0     | 15.0      | 6.4     ms | 66.7%      | 0.0%       | 0/0/60/0/0        | 80.7%    
+                         | Static T4   | 480.0     | 8.0       | 34.4    ms | 82.2%      | 46.7%      | 0/0/0/60/0        | 100.0%   
+                         | Static T5   | 60.0      | 1.0       | 0.0     ms | 97.8%      | 93.3%      | 0/0/0/0/60        | 80.7%    
+                         | AdaptGreen  | 60.0      | 1.0       | 0.0     ms | 97.8     % | 93.3     % | 0/0/0/0/60        | 80.7%    
+------------------------------------------------------------------------------------------------------------------------------------
+THERMAL_STRESS           | Static T1   | 2700.0    | 45.0      | 6.6     ms | 0.0%       | N/A        | 60/0/0/0/0        | 100.0%   
+                         | Static T2   | 1800.0    | 30.0      | 6.4     ms | 33.3%      | -100.0%    | 0/60/0/0/0        | 85.0%    
+                         | Static T3   | 900.0     | 15.0      | 6.5     ms | 66.7%      | 0.0%       | 0/0/60/0/0        | 80.7%    
+                         | Static T4   | 480.0     | 8.0       | 34.2    ms | 82.2%      | 46.7%      | 0/0/0/60/0        | 100.0%   
+                         | Static T5   | 60.0      | 1.0       | 0.0     ms | 97.8%      | 93.3%      | 0/0/0/0/60        | 80.7%    
+                         | AdaptGreen  | 1290.0    | 21.5      | 6.6     ms | 52.2     % | -43.3    % | 13/0/47/0/0       | 85.3%    
+------------------------------------------------------------------------------------------------------------------------------------
+BATTERY_CRITICAL         | Static T1   | 2700.0    | 45.0      | 6.4     ms | 0.0%       | N/A        | 60/0/0/0/0        | 100.0%   
+                         | Static T2   | 1800.0    | 30.0      | 6.2     ms | 33.3%      | -100.0%    | 0/60/0/0/0        | 85.0%    
+                         | Static T3   | 900.0     | 15.0      | 6.7     ms | 66.7%      | 0.0%       | 0/0/60/0/0        | 80.7%    
+                         | Static T4   | 480.0     | 8.0       | 34.5    ms | 82.2%      | 46.7%      | 0/0/0/60/0        | 100.0%   
+                         | Static T5   | 60.0      | 1.0       | 0.0     ms | 97.8%      | 93.3%      | 0/0/0/0/60        | 80.7%    
+                         | AdaptGreen  | 662.0     | 11.0      | 4.6     ms | 75.5     % | 26.4     % | 0/0/43/0/17       | 80.7%    
+------------------------------------------------------------------------------------------------------------------------------------
+NETWORK_ASSISTED_OFFLOAD | Static T1   | 2700.0    | 45.0      | 6.4     ms | 0.0%       | N/A        | 60/0/0/0/0        | 100.0%   
+                         | Static T2   | 1800.0    | 30.0      | 6.2     ms | 33.3%      | -100.0%    | 0/60/0/0/0        | 85.0%    
+                         | Static T3   | 900.0     | 15.0      | 6.7     ms | 66.7%      | 0.0%       | 0/0/60/0/0        | 80.7%    
+                         | Static T4   | 480.0     | 8.0       | 34.1    ms | 82.2%      | 46.7%      | 0/0/0/60/0        | 100.0%   
+                         | Static T5   | 60.0      | 1.0       | 0.0     ms | 97.8%      | 93.3%      | 0/0/0/0/60        | 80.7%    
+                         | AdaptGreen  | 480.0     | 8.0       | 13.6    ms | 82.2     % | 46.7     % | 0/0/20/20/20      | 92.3%    
+------------------------------------------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
 DETAILED SCENARIO BREAKDOWN
@@ -38,7 +58,7 @@ DETAILED SCENARIO BREAKDOWN
 
 [ SCENARIO: FOREGROUND_ACTIVE ]
   - Total Epochs Simulated:       60
-  - Average Execution Latency:    5.76 ms
+  - Average Execution Latency:    6.17 ms
   - Average Simulated Energy:     45.00 mJ
   - Total Simulated Energy:       2700.00 mJ
   - Tier Distribution:            T1=60, T2=0, T3=0, T4=0, T5=0 epochs
@@ -46,10 +66,14 @@ DETAILED SCENARIO BREAKDOWN
   - Number of Tier Switches:      0
   - Cache Hit Rate:               0.0%
   - Energy Savings vs. Static T1: 0.00%
+  - Energy Savings vs. Static T2: -50.00%
   - Energy Savings vs. Static T3: -200.00%
+  - Energy Savings vs. Static T4: -462.50%
+  - Energy Savings vs. Static T5: -4400.00%
   - Semantic Cosine Similarity:   Mean=1.0000, Min=1.0000
   - Embeddings >= 0.95 Similarity:  100.0%
-  - Top-5 Recommender Accuracy:   Mean=100.0%, Min=100.0%
+  - Top-5 Recommender Overlap:    Mean=100.0%, Min=100.0%
+  - Ranking Quality (NDCG@5/MRR): NDCG@5=1.0000, MRR=1.0000
   - Metric Definition Note:       Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy.
 
 [ SCENARIO: BACKGROUND_BATCH ]
@@ -62,15 +86,19 @@ DETAILED SCENARIO BREAKDOWN
   - Number of Tier Switches:      0
   - Cache Hit Rate:               100.0%
   - Energy Savings vs. Static T1: 97.78%
+  - Energy Savings vs. Static T2: 96.67%
   - Energy Savings vs. Static T3: 93.33%
+  - Energy Savings vs. Static T4: 87.50%
+  - Energy Savings vs. Static T5: 0.00%
   - Semantic Cosine Similarity:   Mean=0.9592, Min=0.9483
   - Embeddings >= 0.95 Similarity:  90.0%
-  - Top-5 Recommender Accuracy:   Mean=80.7%, Min=60.0%
+  - Top-5 Recommender Overlap:    Mean=80.7%, Min=60.0%
+  - Ranking Quality (NDCG@5/MRR): NDCG@5=0.9208, MRR=0.8583
   - Metric Definition Note:       Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy.
 
 [ SCENARIO: THERMAL_STRESS ]
   - Total Epochs Simulated:       60
-  - Average Execution Latency:    7.60 ms
+  - Average Execution Latency:    6.56 ms
   - Average Simulated Energy:     21.50 mJ
   - Total Simulated Energy:       1290.00 mJ
   - Tier Distribution:            T1=13, T2=0, T3=47, T4=0, T5=0 epochs
@@ -78,15 +106,19 @@ DETAILED SCENARIO BREAKDOWN
   - Number of Tier Switches:      1
   - Cache Hit Rate:               0.0%
   - Energy Savings vs. Static T1: 52.22%
+  - Energy Savings vs. Static T2: 28.33%
   - Energy Savings vs. Static T3: -43.33%
+  - Energy Savings vs. Static T4: -168.75%
+  - Energy Savings vs. Static T5: -2050.00%
   - Semantic Cosine Similarity:   Mean=0.9678, Min=0.9483
   - Embeddings >= 0.95 Similarity:  91.7%
-  - Top-5 Recommender Accuracy:   Mean=85.3%, Min=60.0%
+  - Top-5 Recommender Overlap:    Mean=85.3%, Min=60.0%
+  - Ranking Quality (NDCG@5/MRR): NDCG@5=0.9337, MRR=0.8750
   - Metric Definition Note:       Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy.
 
 [ SCENARIO: BATTERY_CRITICAL ]
   - Total Epochs Simulated:       60
-  - Average Execution Latency:    5.32 ms
+  - Average Execution Latency:    4.61 ms
   - Average Simulated Energy:     11.03 mJ
   - Total Simulated Energy:       662.00 mJ
   - Tier Distribution:            T1=0, T2=0, T3=43, T4=0, T5=17 epochs
@@ -94,10 +126,34 @@ DETAILED SCENARIO BREAKDOWN
   - Number of Tier Switches:      1
   - Cache Hit Rate:               28.3%
   - Energy Savings vs. Static T1: 75.48%
+  - Energy Savings vs. Static T2: 63.22%
   - Energy Savings vs. Static T3: 26.44%
+  - Energy Savings vs. Static T4: -37.92%
+  - Energy Savings vs. Static T5: -1003.33%
   - Semantic Cosine Similarity:   Mean=0.9592, Min=0.9483
   - Embeddings >= 0.95 Similarity:  90.0%
-  - Top-5 Recommender Accuracy:   Mean=80.7%, Min=60.0%
+  - Top-5 Recommender Overlap:    Mean=80.7%, Min=60.0%
+  - Ranking Quality (NDCG@5/MRR): NDCG@5=0.9208, MRR=0.8583
+  - Metric Definition Note:       Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy.
+
+[ SCENARIO: NETWORK_ASSISTED_OFFLOAD ]
+  - Total Epochs Simulated:       60
+  - Average Execution Latency:    13.56 ms
+  - Average Simulated Energy:     8.00 mJ
+  - Total Simulated Energy:       480.00 mJ
+  - Tier Distribution:            T1=0, T2=0, T3=20, T4=20, T5=20 epochs
+  - Cache Hits / Misses:          20 / 0
+  - Number of Tier Switches:      2
+  - Cache Hit Rate:               33.3%
+  - Energy Savings vs. Static T1: 82.22%
+  - Energy Savings vs. Static T2: 73.33%
+  - Energy Savings vs. Static T3: 46.67%
+  - Energy Savings vs. Static T4: 0.00%
+  - Energy Savings vs. Static T5: -700.00%
+  - Semantic Cosine Similarity:   Mean=0.9864, Min=0.9483
+  - Embeddings >= 0.95 Similarity:  96.7%
+  - Top-5 Recommender Overlap:    Mean=92.3%, Min=60.0%
+  - Ranking Quality (NDCG@5/MRR): NDCG@5=0.9769, MRR=0.9667
   - Metric Definition Note:       Cosine similarity measures geometric alignment in 384-dimensional latent embedding space relative to full FP32 PyTorch inference. It does NOT represent classification accuracy.
 
 ================================================================================

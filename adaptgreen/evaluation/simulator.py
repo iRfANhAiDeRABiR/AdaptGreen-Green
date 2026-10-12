@@ -111,21 +111,29 @@ class SimulationRunner:
         # 2. Generate identical queries for fair baseline comparison
         queries = self.generate_scenario_queries(total_epochs, self.cfg.random_seed)
 
-        # 3. Run Static-T1 Reference Baseline
-        logger.info("Running Static T1 Baseline for %s...", scenario_name)
+        # 3. Run All 5 Static Tier Baselines (T1, T2, T4, T3, T5 order preserves T3-warmed cache state)
+        logger.info("Running Static T1 (FP32) Baseline for %s...", scenario_name)
         res_t1 = self.baselines.run_baseline("T1", queries, states, scenario_name)
 
-        # 4. Run Static-T3 Quantized Baseline
-        logger.info("Running Static T3 Baseline for %s...", scenario_name)
+        logger.info("Running Static T2 (Pruned) Baseline for %s...", scenario_name)
+        res_t2 = self.baselines.run_baseline("T2", queries, states, scenario_name)
+
+        logger.info("Running Static T4 (Cloud REST) Baseline for %s...", scenario_name)
+        res_t4 = self.baselines.run_baseline("T4", queries, states, scenario_name)
+
+        logger.info("Running Static T3 (INT8) Baseline for %s...", scenario_name)
         res_t3 = self.baselines.run_baseline("T3", queries, states, scenario_name)
 
-        # 5. Run AdaptGreen Adaptive Runtime Framework
+        logger.info("Running Static T5 (Cache) Baseline for %s...", scenario_name)
+        res_t5 = self.baselines.run_baseline("T5", queries, states, scenario_name)
+
+        # 4. Run AdaptGreen Adaptive Runtime Framework
         logger.info("Running AdaptGreen Adaptive Runtime for %s...", scenario_name)
         ag_records: List[Dict[str, Any]] = []
         ag_embeddings: List[np.ndarray] = []
         ag_latencies: List[float] = []
         ag_energies: List[float] = []
-        tier_counts: Dict[str, int] = {"T1": 0, "T3": 0, "T5": 0}
+        tier_counts: Dict[str, int] = {"T1": 0, "T2": 0, "T3": 0, "T4": 0, "T5": 0}
         total_switches = 0
 
         for epoch_idx in range(total_epochs):
@@ -197,13 +205,7 @@ class SimulationRunner:
             threshold=self.cfg.constraints.min_similarity_threshold
         )
 
-        t3_fidelity = evaluate_embedding_fidelity(
-            reference_embeddings=res_t1["embeddings"],
-            evaluated_embeddings=res_t3["embeddings"],
-            threshold=self.cfg.constraints.min_similarity_threshold
-        )
-
-        # Evaluate Academic Paper Recommendation Accuracy
+        # Evaluate Academic Paper Recommendation Accuracy for AdaptGreen
         rec_acc = None
         if self.corpus_embeddings is not None:
             rec_acc = evaluate_recommendation_accuracy(
@@ -213,9 +215,35 @@ class SimulationRunner:
                 k=5,
             )
 
-        # Calculate energy savings
+        # Helper to build static baseline summary dict
+        def _build_static_summary(res_tier: Dict[str, Any]) -> Dict[str, Any]:
+            tier_fid = evaluate_embedding_fidelity(
+                reference_embeddings=res_t1["embeddings"],
+                evaluated_embeddings=res_tier["embeddings"],
+                threshold=self.cfg.constraints.min_similarity_threshold
+            )
+            tier_rec = None
+            if self.corpus_embeddings is not None:
+                tier_rec = evaluate_recommendation_accuracy(
+                    evaluated_queries=res_tier["embeddings"],
+                    reference_queries=res_t1["embeddings"],
+                    corpus_embeddings=self.corpus_embeddings,
+                    k=5,
+                )
+            return {
+                "total_energy_mj": res_tier["total_energy_mj"],
+                "avg_energy_mj": res_tier["avg_energy_mj"],
+                "avg_latency_ms": res_tier["avg_latency_ms"],
+                "fidelity_vs_t1": tier_fid,
+                "recommendation_acc": tier_rec,
+            }
+
+        # Calculate energy savings vs all 5 static baselines
         saving_vs_t1 = compute_energy_saving_pct(res_t1["total_energy_mj"], ag_total_energy)
+        saving_vs_t2 = compute_energy_saving_pct(res_t2["total_energy_mj"], ag_total_energy)
         saving_vs_t3 = compute_energy_saving_pct(res_t3["total_energy_mj"], ag_total_energy)
+        saving_vs_t4 = compute_energy_saving_pct(res_t4["total_energy_mj"], ag_total_energy)
+        saving_vs_t5 = compute_energy_saving_pct(res_t5["total_energy_mj"], ag_total_energy)
 
         summary = {
             "scenario": scenario_name,
@@ -233,19 +261,16 @@ class SimulationRunner:
                 "fidelity_vs_t1": fidelity,
                 "recommendation_acc": rec_acc,
                 "saving_vs_t1_pct": saving_vs_t1,
+                "saving_vs_t2_pct": saving_vs_t2,
                 "saving_vs_t3_pct": saving_vs_t3,
+                "saving_vs_t4_pct": saving_vs_t4,
+                "saving_vs_t5_pct": saving_vs_t5,
             },
-            "static_t1": {
-                "total_energy_mj": res_t1["total_energy_mj"],
-                "avg_energy_mj": res_t1["avg_energy_mj"],
-                "avg_latency_ms": res_t1["avg_latency_ms"],
-            },
-            "static_t3": {
-                "total_energy_mj": res_t3["total_energy_mj"],
-                "avg_energy_mj": res_t3["avg_energy_mj"],
-                "avg_latency_ms": res_t3["avg_latency_ms"],
-                "fidelity_vs_t1": t3_fidelity,
-            },
+            "static_t1": _build_static_summary(res_t1),
+            "static_t2": _build_static_summary(res_t2),
+            "static_t3": _build_static_summary(res_t3),
+            "static_t4": _build_static_summary(res_t4),
+            "static_t5": _build_static_summary(res_t5),
         }
 
         # Save Scenario CSV Telemetry
@@ -260,6 +285,9 @@ class SimulationRunner:
             "summary": summary,
             "ag_df": df_ag,
             "t1_df": pd.DataFrame(res_t1["records"]),
+            "t2_df": pd.DataFrame(res_t2["records"]),
             "t3_df": pd.DataFrame(res_t3["records"]),
+            "t4_df": pd.DataFrame(res_t4["records"]),
+            "t5_df": pd.DataFrame(res_t5["records"]),
             "states": states,
         }

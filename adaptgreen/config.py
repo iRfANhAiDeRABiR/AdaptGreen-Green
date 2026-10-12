@@ -7,6 +7,7 @@ All thresholds, tier profiles, Q-learning hyper-parameters, and simulation paths
 are maintained here to prevent hard-coding values across the codebase.
 """
 
+import json
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, List, Tuple
@@ -183,6 +184,7 @@ DEVICE_PRESETS: Dict[str, DeviceClassConfig] = {
         ram_min=400.0,
         thermal_max=83.0,
         battery_min=20.0,
+        energy_profile=EnergyProfile(T1_MJ=38.0, T2_MJ=26.0, T3_MJ=12.5, T4_MJ=7.5, T5_MJ=0.9),
     ),
     "PIXEL_8": DeviceClassConfig(
         name="Google Pixel 8 Pro",
@@ -191,6 +193,7 @@ DEVICE_PRESETS: Dict[str, DeviceClassConfig] = {
         ram_min=500.0,
         thermal_max=81.0,
         battery_min=20.0,
+        energy_profile=EnergyProfile(T1_MJ=42.0, T2_MJ=29.0, T3_MJ=14.0, T4_MJ=8.0, T5_MJ=1.0),
     ),
     "HELIO_G99": DeviceClassConfig(
         name="Redmi Note 12 / Helio G99",
@@ -199,6 +202,7 @@ DEVICE_PRESETS: Dict[str, DeviceClassConfig] = {
         ram_min=800.0,
         thermal_max=77.5,
         battery_min=15.0,
+        energy_profile=EnergyProfile(T1_MJ=58.0, T2_MJ=40.0, T3_MJ=22.0, T4_MJ=9.5, T5_MJ=1.2),
     ),
 }
 
@@ -257,17 +261,34 @@ class SimulationConfig:
             # Check if json file exists directly
             json_file = self.configs_dir / f"{device_class.lower()}.json"
             if json_file.exists():
-                with open(json_file, "r") as f:
+                with open(json_file, "r", encoding="utf-8") as f:
                     data = json.load(f)
                 c = data.get("constraints", {})
                 hw = data.get("hardware", {})
+                tp = data.get("tier_profiles", {})
+                custom_energy = EnergyProfile(
+                    T1_MJ=tp.get("T1", {}).get("energy_mj", 45.0),
+                    T2_MJ=tp.get("T2", {}).get("energy_mj", 30.0),
+                    T3_MJ=tp.get("T3", {}).get("energy_mj", 15.0),
+                    T4_MJ=tp.get("T4", {}).get("energy_mj", 8.0),
+                    T5_MJ=tp.get("T5", {}).get("energy_mj", 1.0),
+                )
+                custom_memory = MemoryProfile(
+                    T1_MB=tp.get("T1", {}).get("memory_mb", 120.0),
+                    T2_MB=tp.get("T2", {}).get("memory_mb", 85.0),
+                    T3_MB=tp.get("T3", {}).get("memory_mb", 50.0),
+                    T4_MB=tp.get("T4", {}).get("memory_mb", 15.0),
+                    T5_MB=tp.get("T5", {}).get("memory_mb", 5.0),
+                )
                 preset = DeviceClassConfig(
                     name=data.get("device_class", device_class),
                     soc_description=hw.get("soc", "Custom SoC"),
                     total_ram_mb=hw.get("total_ram_mb", 6144.0),
                     ram_min=c.get("ram_min", 600.0),
                     thermal_max=c.get("thermal_max", 80.0),
-                    battery_min=c.get("battery_min", 20.0)
+                    battery_min=c.get("battery_min", 20.0),
+                    energy_profile=custom_energy,
+                    memory_profile=custom_memory,
                 )
             else:
                 raise ValueError(f"Unknown device class: {device_class}. Supported: {list(DEVICE_PRESETS.keys())}")

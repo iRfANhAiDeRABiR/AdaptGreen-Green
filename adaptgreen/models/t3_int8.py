@@ -64,7 +64,9 @@ class INT8MiniLMModel:
         # Document and audit quantized modules
         self.quantized_layer_names: List[str] = []
         for name, module in self.quantized_model.named_modules():
-            if "quantized" in module.__class__.__name__.lower() or "dynamic" in module.__class__.__name__.lower():
+            cls_name = module.__class__.__name__.lower()
+            mod_name = module.__class__.__module__.lower()
+            if "quantized" in cls_name or "dynamic" in cls_name or "quantized" in mod_name:
                 self.quantized_layer_names.append(f"{name} ({module.__class__.__name__})")
 
         logger.info(

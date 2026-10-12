@@ -107,30 +107,36 @@ Hysteresis:
 
 
 def format_summary_table(summary: dict) -> str:
-    """Formats ASCII terminal summary table of experimental results."""
+    """Formats ASCII terminal summary table of experimental results across all 5 tiers + AdaptGreen."""
     header = (
-        f"{'Scenario':<18} | {'Method':<11} | {'Tot (mJ)':<9} | {'Avg (mJ)':<9} | "
+        f"{'Scenario':<24} | {'Method':<11} | {'Tot (mJ)':<9} | {'Avg (mJ)':<9} | "
         f"{'Avg Lat':<9} | {'Sav vs T1':<10} | {'Sav vs T3':<10} | {'Tiers (1/2/3/4/5)':<17} | {'Top-5 Acc':<9}"
     )
     separator = "-" * len(header)
     rows = [separator, header, separator]
 
-    for sc_name, sc_data in summary.items():
-        # Static T1 Row
-        t1_data = sc_data["static_t1"]
-        rows.append(
-            f"{sc_name:<18} | {'Static T1':<11} | {t1_data['total_energy_mj']:<9.1f} | "
-            f"{t1_data['avg_energy_mj']:<9.1f} | {t1_data['avg_latency_ms']:<8.1f}ms | "
-            f"{'0.0%':<10} | {'N/A':<10} | {'60/0/0/0/0':<17} | {'100.0%':<9}"
-        )
+    static_meta = [
+        ("static_t1", "Static T1", "60/0/0/0/0", "0.0%", "N/A"),
+        ("static_t2", "Static T2", "0/60/0/0/0", "33.3%", "-100.0%"),
+        ("static_t3", "Static T3", "0/0/60/0/0", "66.7%", "0.0%"),
+        ("static_t4", "Static T4", "0/0/0/60/0", "82.2%", "46.7%"),
+        ("static_t5", "Static T5", "0/0/0/0/60", "97.8%", "93.3%"),
+    ]
 
-        # Static T3 Row
-        t3_data = sc_data["static_t3"]
-        rows.append(
-            f"{'':<18} | {'Static T3':<11} | {t3_data['total_energy_mj']:<9.1f} | "
-            f"{t3_data['avg_energy_mj']:<9.1f} | {t3_data['avg_latency_ms']:<8.1f}ms | "
-            f"{'66.7%':<10} | {'0.0%':<10} | {'0/0/60/0/0':<17} | {'98.3%':<9}"
-        )
+    for sc_name, sc_data in summary.items():
+        for idx, (s_key, s_label, s_dist, s_sav_t1, s_sav_t3) in enumerate(static_meta):
+            if s_key not in sc_data:
+                continue
+            s_data = sc_data[s_key]
+            sc_col = sc_name if idx == 0 else ""
+            top5_str = "100.0%" if s_key == "static_t1" else "N/A"
+            if s_data.get("recommendation_acc"):
+                top5_str = f"{s_data['recommendation_acc']['mean_top_k_overlap'] * 100.0:.1f}%"
+            rows.append(
+                f"{sc_col:<24} | {s_label:<11} | {s_data['total_energy_mj']:<9.1f} | "
+                f"{s_data['avg_energy_mj']:<9.1f} | {s_data['avg_latency_ms']:<8.1f}ms | "
+                f"{s_sav_t1:<10} | {s_sav_t3:<10} | {s_dist:<17} | {top5_str:<9}"
+            )
 
         # AdaptGreen Row
         ag_data = sc_data["adaptgreen"]
@@ -140,7 +146,7 @@ def format_summary_table(summary: dict) -> str:
         if ag_data.get("recommendation_acc"):
             top5_str = f"{ag_data['recommendation_acc']['mean_top_k_overlap'] * 100.0:.1f}%"
         rows.append(
-            f"{'':<18} | {'AdaptGreen':<11} | {ag_data['total_energy_mj']:<9.1f} | "
+            f"{'':<24} | {'AdaptGreen':<11} | {ag_data['total_energy_mj']:<9.1f} | "
             f"{ag_data['avg_energy_mj']:<9.1f} | {ag_data['avg_latency_ms']:<8.1f}ms | "
             f"{ag_data['saving_vs_t1_pct']:<9.1f}% | {ag_data['saving_vs_t3_pct']:<9.1f}% | "
             f"{tier_dist:<17} | {top5_str:<9}"
@@ -160,9 +166,10 @@ def generate_final_report_text(summary: dict) -> str:
         "RESEARCH INTEGRITY DISCLAIMER:",
         "This experiment is a Python simulation prototype evaluating the AdaptGreen",
         "context-adaptive runtime architecture ahead of physical Android deployment.",
-        "Simulated Elements: Battery, SoC Temperature, RAM, RSSI, Energy profiles (45/15/1 mJ).",
-        "Actual Software Execution: PyTorch FP32 MiniLM, Dynamic INT8 Quantized PyTorch Model,",
-        "In-Memory Embedding Cache, Policy Decision Unit, Offline Q-learning, Hysteresis Logic.",
+        "Simulated Elements: Battery, SoC Temperature, RAM, RSSI, Energy profiles (45/30/15/8/1 mJ).",
+        "Actual Software Execution: PyTorch FP32 MiniLM (T1), L2 Structured Pruned MiniLM (T2),",
+        "Dynamic INT8 Quantized PyTorch Model (T3), Cloud Offload REST Client (T4),",
+        "In-Memory Embedding Cache (T5), Policy Decision Unit, Offline Q-learning, Hysteresis Logic.",
         "",
         "--------------------------------------------------------------------------------",
         "GLOBAL EXPERIMENTAL RESULTS SUMMARY",
@@ -180,10 +187,14 @@ def generate_final_report_text(summary: dict) -> str:
         u = ag["tier_usage"]
 
         rec_str = "N/A"
+        ndcg_str = "N/A"
+        mrr_str = "N/A"
         if ag.get("recommendation_acc"):
             rec_mean = ag["recommendation_acc"]["mean_top_k_overlap"] * 100.0
             rec_min = ag["recommendation_acc"]["min_top_k_overlap"] * 100.0
             rec_str = f"Mean={rec_mean:.1f}%, Min={rec_min:.1f}%"
+            ndcg_str = f"{ag['recommendation_acc'].get('mean_ndcg_at_k', 0.0):.4f}"
+            mrr_str = f"{ag['recommendation_acc'].get('mean_mrr', 0.0):.4f}"
 
         lines.extend([
             f"\n[ SCENARIO: {sc_name} ]",
@@ -196,10 +207,14 @@ def generate_final_report_text(summary: dict) -> str:
             f"  - Number of Tier Switches:      {ag['tier_switches']}",
             f"  - Cache Hit Rate:               {ag['cache_hit_rate_pct']:.1f}%",
             f"  - Energy Savings vs. Static T1: {ag['saving_vs_t1_pct']:.2f}%",
+            f"  - Energy Savings vs. Static T2: {ag.get('saving_vs_t2_pct', 0.0):.2f}%",
             f"  - Energy Savings vs. Static T3: {ag['saving_vs_t3_pct']:.2f}%",
+            f"  - Energy Savings vs. Static T4: {ag.get('saving_vs_t4_pct', 0.0):.2f}%",
+            f"  - Energy Savings vs. Static T5: {ag.get('saving_vs_t5_pct', 0.0):.2f}%",
             f"  - Semantic Cosine Similarity:   Mean={fid['mean_cosine_similarity']:.4f}, Min={fid['min_cosine_similarity']:.4f}",
             f"  - Embeddings >= {fid['threshold_used']} Similarity:  {fid['pct_above_threshold']:.1f}%",
-            f"  - Top-5 Recommender Accuracy:   {rec_str}",
+            f"  - Top-5 Recommender Overlap:    {rec_str}",
+            f"  - Ranking Quality (NDCG@5/MRR): NDCG@5={ndcg_str}, MRR={mrr_str}",
             f"  - Metric Definition Note:       {fid['metric_definition_note']}"
         ])
 
@@ -218,7 +233,10 @@ def run_experiment() -> None:
 
     all_ag_dfs: list[pd.DataFrame] = []
     all_t1_dfs: list[pd.DataFrame] = []
+    all_t2_dfs: list[pd.DataFrame] = []
     all_t3_dfs: list[pd.DataFrame] = []
+    all_t4_dfs: list[pd.DataFrame] = []
+    all_t5_dfs: list[pd.DataFrame] = []
     global_summary: dict = {}
 
     scenarios = [
@@ -226,6 +244,7 @@ def run_experiment() -> None:
         "BACKGROUND_BATCH",
         "THERMAL_STRESS",
         "BATTERY_CRITICAL",
+        "NETWORK_ASSISTED_OFFLOAD",
     ]
 
     for scenario_name in scenarios:
@@ -238,12 +257,18 @@ def run_experiment() -> None:
         global_summary[scenario_name] = results["summary"]
         all_ag_dfs.append(results["ag_df"])
         all_t1_dfs.append(results["t1_df"])
+        all_t2_dfs.append(results["t2_df"])
         all_t3_dfs.append(results["t3_df"])
+        all_t4_dfs.append(results["t4_df"])
+        all_t5_dfs.append(results["t5_df"])
 
     # Combine all scenario telemetry into results/all_results.csv
     combined_ag_df = pd.concat(all_ag_dfs, ignore_index=True)
     combined_t1_df = pd.concat(all_t1_dfs, ignore_index=True)
+    combined_t2_df = pd.concat(all_t2_dfs, ignore_index=True)
     combined_t3_df = pd.concat(all_t3_dfs, ignore_index=True)
+    combined_t4_df = pd.concat(all_t4_dfs, ignore_index=True)
+    combined_t5_df = pd.concat(all_t5_dfs, ignore_index=True)
 
     all_results_path = CONFIG.results_dir / "all_results.csv"
     combined_ag_df.to_csv(all_results_path, index=False)
@@ -255,7 +280,10 @@ def run_experiment() -> None:
         ag_df=combined_ag_df,
         t1_df=combined_t1_df,
         t3_df=combined_t3_df,
-        summary=global_summary
+        summary=global_summary,
+        t2_df=combined_t2_df,
+        t4_df=combined_t4_df,
+        t5_df=combined_t5_df,
     )
     for plot_path in generated_plots:
         print(f"  -> Generated: {plot_path.name}")
